@@ -1,0 +1,116 @@
+<resources>
+    <string name="app_name">AB Quiz</string>
+
+    <string name="spotlight_updater">Spotlight Updater</string>
+    <string name="powered_by">powered by</string>
+    <string name="splash_u">u</string>
+    <string name="splash_l">l</string>
+    <string name="splash_s">s</string>
+
+    <string name="android_icon">Android icon</string>
+    <string name="android_text">Android</string>
+    <string name="basic_text">Basic</string>
+    <string name="quiz_text">Quiz</string>
+    <string name="start_button">Start</string>
+    <string name="begin_button">Begin</string>
+
+    <string name="question_tag">Question 1</string>
+    <string name="question_1">Which ViewGroup can be used for listing?</string>
+    <string name="answer1_1">LinearLayout</string>
+    <string name="answer1_2">RelativeView</string>
+    <string name="answer1_3">ConstriantView</string>
+    <string name="answer1_4">TextView</string>
+
+    <string name="question2_tag">Question 2</string>
+    <string name="question_2">The following are types of Views except.</string>
+    <string name="answer2_1">TextView</string>
+    <string name="answer2_2">Button</string>
+    <string name="answer2_3">StringView</string>
+    <string name="answer2_4">ImageView</string>
+
+    <string name="question3_tag">Question 3</string>
+    <string name="question_3">void in a method returns what?</string>
+    <string name="answer3_1">Text</string>
+    <string name="answer3_2">Numbers</string>
+    <string name="answer3_3">String</string>
+    <string name="answer3_4">Nothing</string>
+
+    <string name="question4_tag">Question 4</string>
+    <string name="question_4">Which of the following are Primitive data types?</string>
+    <string name="answer4_1">Integer</string>
+    <string name="answer4_2">boolean</string>
+    <string name="answer4_3">String</string>
+    <string name="answer4_4">double</string>
+
+    <string name="question5_tag">Question 5</string>
+    <string name="question_5">Layouts can be achieved by using the following.</string>
+    <string name="answer5_1">TextView</string>
+    <string name="answer5_2">Design Editor only</string>
+    <string name="answer5_3">Design Editor or Text Editor</string>
+    <string name="answer5_4">Text xml </string>
+
+    <string name="question6_tag">Question 6</string>
+    <string name="question_6">String is an object data type.</string>
+    <string name="answer6_1">True</string>
+    <string name="answer6_2">False</string>
+
+    <string name="question7_tag">Question 7</string>
+    <string name="question_7">Type the correct line of code for this: /n textview Text = (view) FindtheView (r.di.text_view)</string>
+    <string name="answer7">TextView text = (TextView) findViewById(R.id.text_view);</string>
+
+    <string name="question8_tag">Question 8</string>
+    <string name="question_8">Button is a type of View.</string>
+    <string name="answer8_1">True</string>
+    <string name="answer8_2">False</string>
+
+    <string name="question9_tag">Question 9</string>
+    <string name="question_9">Which of the following are TextView call functions?</string>
+    <string name="answer9_1">.setText</string>
+    <string name="answer9_2">.getText</string>
+    <string name="answer9_3">text</string>
+    <string name="answer9_4">textSize</string>
+
+    <string name="question10_tag">Question 10</string>
+    <string name="question_10">Write the intent constructor of a wordIntent to an email.</string>
+    <string name="answer10">Intent wordIntent = new Intent(Intent.ACTION_SENDTO);</string>
+    <string name="submit">submit</string>
+
+    <string name="grade_tag">Grade</string>
+    <string name="check_answers_text">Check Answers</string>
+
+    <string name="answer_tag">Android Basic Quiz Answers</string>
+
+    <string name="next_page">Next</string>
+    <string name="previous_page">Previous</string>
+
+    <string name="EditText_hint">Enter code here, don\'t forget the ending ;</string>
+
+    <string name="answer_1">Question 1: Answer</string>
+    <string name="answer_2">Question 2: Answer</string>
+    <string name="answer_3">Question 3: Answer</string>
+    <string name="answer_4">Question 4: Answer</string>
+    <string name="answer_5">Question 5: Answer</string>
+    <string name="answer_6">Question 6: Answer</string>
+    <string name="answer_7">Question 7: Answer</string>
+    <string name="answer_8">Question 8: Answer</string>
+    <string name="answer_9">Question 9: Answer</string>
+    <string name="answer_10">Question 10: Answer</string>
+
+
+    <string name="score">score</string>
+    <string name="qTag">Questions</string>
+    <string name="score_tag">Score</string>
+    <string name="remark_tag">Remark</string>
+    <string name="total_tag">Total</string>
+    <string name="grade_analysis">Grade Analysis</string>
+    <string name="correct_answer">correct</string>
+    <string name="wrong_answer">wrong</string>
+    <string name="partial_answer">fair</string>
+    <string name="excellent">Excellent</string>
+    <string name="very_good">Very Good</string>
+    <string name="good">Good</string>
+    <string name="failed">Failed</string>
+    <string name="x_text">X</string>
+    <string name="enter_your_name_editText">Enter Your Name!</string>
+    <string name="grade_analysis_text">Result for: </string>
+</resources>

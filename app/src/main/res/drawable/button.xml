@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/colorPrimary" android:shape="oval">
+    <corners android:bottomLeftRadius="@dimen/parent_padding10"
+        android:bottomRightRadius="@dimen/parent_padding10"
+        android:topLeftRadius="@dimen/parent_padding10"
+        android:topRightRadius="@dimen/parent_padding10"
+        android:radius="@dimen/parent_padding10"/>
+</shape>

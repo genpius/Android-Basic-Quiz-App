@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Splash">
+
+    <RelativeLayout
+        android:id="@+id/SLU_text"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/s_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/circlebackground"
+            android:backgroundTint="#fff"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="@string/splash_s"
+            android:textAllCaps="true"
+            android:textColor="#f08080"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/l_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/s_text"
+            android:layout_toEndOf="@id/s_text"
+            android:background="@drawable/circlebackground"
+            android:backgroundTint="#000"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="@string/splash_l"
+            android:textAllCaps="true"
+            android:textColor="#90ee90"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+
+        <TextView
+            android:id="@+id/u_text"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/l_text"
+            android:layout_toEndOf="@id/l_text"
+            android:background="@drawable/circlebackground"
+            android:backgroundTint="@color/colorAccent"
+            android:fontFamily="cursive"
+            android:gravity="center"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="@string/splash_u"
+            android:textAllCaps="true"
+            android:textColor="#ffff00"
+            android:textSize="40sp"
+            android:textStyle="bold|italic" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/power_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal"
+        android:padding="@dimen/text_view_margin">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/powered_by"
+            android:textColor="#000"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:shadowColor="#000"
+            android:shadowDx="5"
+            android:shadowDy="5"
+            android:shadowRadius="10"
+            android:text="@string/spotlight_updater"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:textStyle="bold|italic"
+            android:padding="5dp"/>
+    </LinearLayout>
+</LinearLayout>
+

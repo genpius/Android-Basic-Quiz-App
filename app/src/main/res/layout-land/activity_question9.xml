@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/parent_padding10"
+    android:background="@drawable/mixed"
+    tools:context=".Question9Activity">
+
+    <TextView
+        android:id="@+id/tag"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/question9_tag"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:background="@drawable/button" />
+
+
+    <TextView
+        android:id="@+id/question9_text"
+        style="@style/CategoryTextViews"
+        android:layout_margin="@dimen/text_view_margin"
+        android:text="@string/question_9"
+        android:layout_below="@id/tag"/>
+
+    <CheckBox
+        android:id="@+id/answer9_1"
+        style="@style/CategoryRadioButton"
+        android:text="@string/answer9_1"
+        android:layout_below="@id/question9_text"
+        android:onClick="check"/>
+
+    <CheckBox
+        android:id="@+id/answer9_2"
+        style="@style/CategoryRadioButton"
+        android:text="@string/answer9_2"
+        android:layout_below="@id/answer9_1"
+        android:onClick="check1"/>
+
+    <CheckBox
+        android:id="@+id/answer9_3"
+        style="@style/CategoryRadioButton"
+        android:text="@string/answer9_3"
+        android:layout_below="@id/answer9_2"
+        android:onClick="check"/>
+
+    <CheckBox
+        android:id="@+id/answer9_4"
+        style="@style/CategoryRadioButton"
+        android:text="@string/answer9_4"
+        android:layout_below="@id/answer9_3"
+        android:onClick="check"/>
+
+
+    <Button
+        android:id="@+id/previous_page8"
+        style="@style/CategoryButton"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:onClick="previousPage8"
+        android:text="@string/previous_page"
+        android:shadowColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"/>
+
+
+    <Button
+        android:id="@+id/next_page10"
+        style="@style/CategoryButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:onClick="lunchPage10"
+        android:text="@string/next_page"
+        android:shadowColor="#000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="10"
+        android:layout_alignParentRight="true" />
+
+
+</RelativeLayout>
