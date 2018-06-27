@@ -31,3 +31,9 @@ Different view types are in use on this app for user interactions. which are:
 6. EditTexts
 7. Buttons
 8. TableLayouts
+
+
+#Host Link
+The G-Drive link for the app APK
+
+https://drive.google.com/file/d/10oB5i8PeQCAI4GDMjVshkb1CF4cavxA4/view?usp=drivesdk
