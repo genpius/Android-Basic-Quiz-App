@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/parent_padding10"
-    android:background="@drawable/mixed"
     tools:context=".Question3Activity">
 
     <TextView
@@ -56,7 +55,6 @@
     </RadioGroup>
 
     <Button
-        android:id="@+id/previous_page2"
         style="@style/CategoryButton"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"
@@ -69,7 +67,6 @@
 
 
     <Button
-        android:id="@+id/next_page4"
         style="@style/CategoryButton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"

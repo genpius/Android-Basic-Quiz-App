@@ -17,7 +17,6 @@
         android:textSize="20sp" />
 
     <TableLayout
-        android:id="@+id/table_label"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/tag"
@@ -506,7 +505,6 @@
 
 
     <TextView
-        android:id="@+id/grade_page"
         style="@style/CategoryTextViews"
         android:layout_width="wrap_content"
         android:layout_alignParentBottom="true"

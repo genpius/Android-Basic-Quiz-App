@@ -1,13 +1,13 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@android:color/black</item>
-        <item name="android:colorBackground">@color/background_light</item>
         <item name="android:textColorPrimary">@color/text_color_primary</item>
+        <item name="android:windowBackground">@drawable/crystal</item>
     </style>
 
     <style name="MainPageText">
@@ -48,6 +48,8 @@
         <item name="android:gravity">center</item>
         <item name="android:paddingBottom">8dp</item>
     </style>
+
+    <style name="Theme">Theme</style>
 
 
 </resources>

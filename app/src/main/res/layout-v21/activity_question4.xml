@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/parent_padding10"
-    android:background="@drawable/white_b"
     tools:context=".Question4Activity">
 
     <TextView
@@ -55,7 +54,6 @@
 
 
     <Button
-        android:id="@+id/previous_page3"
         style="@style/CategoryButton"
         android:layout_alignParentBottom="true"
         android:onClick="previousPage3"
@@ -67,7 +65,6 @@
 
 
     <Button
-        android:id="@+id/next_page5"
         style="@style/CategoryButton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"

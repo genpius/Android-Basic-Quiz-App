@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/parent_padding10"
-    android:background="@drawable/mixed"
     tools:context=".Question1Activity">
     
     <LinearLayout
@@ -24,7 +23,6 @@
 
 
     <TextView
-        android:id="@+id/question1_text"
         style="@style/CategoryTextViews"
         android:text="@string/question_1"
         android:layout_margin="@dimen/text_view_margin"/>
@@ -61,7 +59,6 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/previous_page1"
         style="@style/CategoryButton"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"

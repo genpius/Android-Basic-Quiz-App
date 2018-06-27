@@ -4,7 +4,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="@dimen/parent_padding10"
-    android:background="@drawable/crystal"
     tools:context=".MainActivity">
 
     <ScrollView
@@ -49,7 +48,6 @@
                 android:textStyle="bold|italic" />
 
             <TextView
-                android:id="@+id/quiz_text"
                 style="@style/MainPageText"
                 android:shadowColor="#000"
                 android:shadowDx="2"
@@ -63,7 +61,6 @@
     </ScrollView>
 
     <Button
-        android:id="@+id/next_page1"
         style="@style/CategoryButton"
         android:layout_alignParentBottom="true"
         android:layout_centerInParent="true"

@@ -1,36 +1,39 @@
 package com.example.andriod.androidbasicquiz;
 
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import static android.util.Log.d;
+
 public class GradeActivity extends AppCompatActivity {
 
     /*Initialization of all global variable */
-    int score1;
-    int score2;
-    int score3;
-    int score4;
-    int score5;
-    int score6;
-    int score7;
-    int score8;
-    int score9;
-    int score10;
-    int grade;
-    String name;
+    private int score1;
+    private int score2;
+    private int score3;
+    private int score4;
+    private int score5;
+    private int score6;
+    private int score7;
+    private int score8;
+    private int score9;
+    private int score10;
+    private int grade;
+    private String name;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_grade);
-
+        @SuppressLint("all")
         /*getting intent extras from Question10Activity.class and
         making declaration for each extra*/
 
@@ -49,17 +52,17 @@ public class GradeActivity extends AppCompatActivity {
 
         // log debugging statements
 
-        Log.d("TestingInt1", "" + score1);
-        Log.d("TestingInt2", "" + score2);
-        Log.d("TestingInt3", "" + score3);
-        Log.d("TestingInt4", "" + score4);
-        Log.d("TestingInt5", "" + score5);
-        Log.d("TestingInt6", "" + score6);
-        Log.d("TestingInt7", "" + score7);
-        Log.d("TestingInt8", "" + score8);
-        Log.d("TestingInt9", "" + score9);
-        Log.d("TestingInt10", "" + score10);
-        Log.d("TestingIntN", "" + name);
+        d("TestingInt1", "" + score1);
+        d("TestingInt2", "" + score2);
+        d("TestingInt3", "" + score3);
+        d("TestingInt4", "" + score4);
+        d("TestingInt5", "" + score5);
+        d("TestingInt6", "" + score6);
+        d("TestingInt7", "" + score7);
+        d("TestingInt8", "" + score8);
+        d("TestingInt9", "" + score9);
+        d("TestingInt10", "" + score10);
+        d("TestingIntN", "" + name);
 
         grade = score1 + score2 + score3 + score4 + score5 +
                 score6 + score7 + score8 + score9 + score10;//Calculation for the grade point
@@ -96,95 +99,96 @@ public class GradeActivity extends AppCompatActivity {
         displayGA();//Display call function for the Grade Analysis
     }
 
-    // display method for the grade analysis
 
+    // display method for the grade analysis
+    @SuppressLint("all")
     private void displayGA() {
         TextView gradeSummary = findViewById(R.id.grade_analysis);
         gradeSummary.setText(String.format("%s%s", getString(R.string.grade_analysis_text), name));
     }
 
     // display method for the question 1 score
-
-    public void display1(String i) {
+    @SuppressLint("all")
+    private void display1(String i) {
         TextView textView1 = findViewById(R.id.score1);
         textView1.setText(String.format("%s", i));
     }
 
     // display method for the question 1 remark
-
-    public void display1R() {
+    @SuppressLint("all")
+    private void display1R() {
         TextView textView1R = findViewById(R.id.remark1);
         boolean remark1 = (score1 == 10);
         int i;
         if (remark1) {
             i = R.string.correct_answer;
             textView1R.setText(i);
-            textView1R.setTextColor(getResources().getColor(R.color.green));
+            textView1R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView1R.setText(i);
-            textView1R.setTextColor(getResources().getColor(R.color.red));
+            textView1R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 2 score
 
-    public void display2(String i) {
+    private void display2(String i) {
         TextView textView2 = findViewById(R.id.score2);
         textView2.setText(String.format("%s", i));
     }
 
     // display method for the question 2 remark
-
-    public void display2R() {
+    @SuppressLint("all")
+    private void display2R() {
         TextView textView2R = findViewById(R.id.remark2);
         boolean remark2 = (score2 == 10);
         int i;
         if (remark2) {
             i = R.string.correct_answer;
             textView2R.setText(i);
-            textView2R.setTextColor(getResources().getColor(R.color.green));
+            textView2R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView2R.setText(i);
-            textView2R.setTextColor(getResources().getColor(R.color.red));
+            textView2R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 3 score
-
-    public void display3(String i) {
+    @SuppressLint("all")
+    private void display3(String i) {
         TextView textView3 = findViewById(R.id.score3);
         textView3.setText(String.format("%s", i));
     }
 
     // display method for the question 3 remark
-
-    public void display3R() {
+    @SuppressLint("all")
+    private void display3R() {
         TextView textView3R = findViewById(R.id.remark3);
         boolean remark3 = (score3 == 10);
         int i;
         if (remark3) {
             i = R.string.correct_answer;
             textView3R.setText(i);
-            textView3R.setTextColor(getResources().getColor(R.color.green));
+            textView3R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView3R.setText(i);
-            textView3R.setTextColor(getResources().getColor(R.color.red));
+            textView3R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 4 score
-
-    public void display4(String i) {
+    @SuppressLint("all")
+    private void display4(String i) {
         TextView textView4 = findViewById(R.id.score4);
         textView4.setText(String.format("%s", i));
     }
 
     // display method for the question 4 remark
-
-    public void display4R() {
+    @SuppressLint("all")
+    private void display4R() {
         TextView textView4R = findViewById(R.id.remark4);
         boolean remark4a = (score4 == 10);
         boolean remark4b = (score4 == 5);
@@ -192,123 +196,123 @@ public class GradeActivity extends AppCompatActivity {
         if (remark4a) {
             i = R.string.correct_answer;
             textView4R.setText(i);
-            textView4R.setTextColor(getResources().getColor(R.color.green));
+            textView4R.setTextColor(Color.rgb(0,250,0));
         }else if (remark4b) {
             i = R.string.partial_answer;
             textView4R.setText(i);
-            textView4R.setTextColor(getResources().getColor(R.color.blue));
+            textView4R.setTextColor(Color.rgb(0,0,250));
         }else {
             i = R.string.wrong_answer;
             textView4R.setText(i);
-            textView4R.setTextColor(getResources().getColor(R.color.red));
+            textView4R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 5 score
-
-    public void display5(String i) {
+    @SuppressLint("all")
+    private void display5(String i) {
         TextView textView5 = findViewById(R.id.score5);
         textView5.setText(String.format("%s", i));
     }
 
     // display method for the question 5 remark
-
-    public void display5R() {
+    @SuppressLint("all")
+    private void display5R() {
         TextView textView5R = findViewById(R.id.remark5);
         boolean remark5 = (score5 == 10);
         int i;
         if (remark5) {
             i = R.string.correct_answer;
             textView5R.setText(i);
-            textView5R.setTextColor(getResources().getColor(R.color.green));
+            textView5R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView5R.setText(i);
-            textView5R.setTextColor(getResources().getColor(R.color.red));
+            textView5R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 6 score
-
-    public void display6(String i) {
+    @SuppressLint("all")
+    private void display6(String i) {
         TextView textView6 = findViewById(R.id.score6);
         textView6.setText(String.format("%s", i));
     }
 
     // display method for the question 6 remark
-
-    public void display6R() {
+    @SuppressLint("all")
+    private void display6R() {
         TextView textView6R = findViewById(R.id.remark6);
         boolean remark6 = (score6 == 10);
         int i;
         if (remark6) {
             i = R.string.correct_answer;
             textView6R.setText(i);
-            textView6R.setTextColor(getResources().getColor(R.color.green));
+            textView6R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView6R.setText(i);
-            textView6R.setTextColor(getResources().getColor(R.color.red));
+            textView6R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 7 score
-
-    public void display7(String i) {
+    @SuppressLint("all")
+    private void display7(String i) {
         TextView textView7 = findViewById(R.id.score7);
         textView7.setText(String.format("%s", i));
     }
 
     // display method for the question 7 remark
-
-    public void display7R() {
+    @SuppressLint("all")
+    private void display7R() {
         TextView textView7R = findViewById(R.id.remark7);
         boolean remark7 = (score7 == 10);
         int i;
         if (remark7) {
             i = R.string.correct_answer;
             textView7R.setText(i);
-            textView7R.setTextColor(getResources().getColor(R.color.green));
+            textView7R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView7R.setText(i);
-            textView7R.setTextColor(getResources().getColor(R.color.red));
+            textView7R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 8 score
-
-    public void display8(String i) {
+    @SuppressLint("all")
+    private void display8(String i) {
         TextView textView8 = findViewById(R.id.score8);
         textView8.setText(String.format("%s", i));
     }
 
     // display method for the question 8 remark
-
-    public void display8R() {
+    @SuppressLint("all")
+    private void display8R() {
         TextView textView8R = findViewById(R.id.remark8);
         boolean remark8 = (score8 == 10);
         int i;
         if (remark8) {
             i = R.string.correct_answer;
             textView8R.setText(i);
-            textView8R.setTextColor(getResources().getColor(R.color.green));
+            textView8R.setTextColor(Color.rgb(0,250,0));
         }else {
             textView8R.setText(R.string.wrong_answer);
-            textView8R.setTextColor(getResources().getColor(R.color.red));
+            textView8R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 9 score
-
-    public void display9(String i) {
+    @SuppressLint("all")
+    private void display9(String i) {
         TextView textView9 = findViewById(R.id.score9);
         textView9.setText(String.format("%s", i));
     }
 
     // display method for the question 9 remark
-
-    public void display9R() {
+    @SuppressLint("all")
+    private void display9R() {
         TextView textView9R = findViewById(R.id.remark9);
         boolean remark9a = (score9 == 10);
         boolean remark9b = (score9 == 5);
@@ -316,53 +320,53 @@ public class GradeActivity extends AppCompatActivity {
         if (remark9a) {
             i = R.string.correct_answer;
             textView9R.setText(i);
-            textView9R.setTextColor(getResources().getColor(R.color.green));
+            textView9R.setTextColor(Color.rgb(0,250,0));
         }else if (remark9b) {
             i = R.string.partial_answer;
             textView9R.setText(i);
-            textView9R.setTextColor(getResources().getColor(R.color.blue));
+            textView9R.setTextColor(Color.rgb(0,0,250));
         }else {
             i = R.string.wrong_answer;
             textView9R.setText(i);
-            textView9R.setTextColor(getResources().getColor(R.color.red));
+            textView9R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the question 10 score
-
-    public void display10(String i) {
+    @SuppressLint("all")
+    private void display10(String i) {
         TextView textView10 = findViewById(R.id.score10);
         textView10.setText(String.format("%s", i));
     }
 
     // display method for the question 10 remark
-
-    public void display10R() {
+    @SuppressLint("all")
+    private void display10R() {
         TextView textView10R = findViewById(R.id.remark10);
         boolean remark1 = (score10 == 10);
         int i;
         if (remark1) {
             i = R.string.correct_answer;
             textView10R.setText(i);
-            textView10R.setTextColor(getResources().getColor(R.color.green));
+            textView10R.setTextColor(Color.rgb(0,250,0));
         }else {
             i = R.string.wrong_answer;
             textView10R.setText(i);
-            textView10R.setTextColor(getResources().getColor(R.color.red));
+            textView10R.setTextColor(Color.rgb(250,0,0));
         }
     }
 
     // display method for the total score
-
-    public void displayT(String i) {
-        TextView textViewt = findViewById(R.id.total_score);
-        textViewt.setText(String.format("%s", i));
+    @SuppressLint("all")
+    private void displayT(String i) {
+        TextView textViewT = findViewById(R.id.total_score);
+        textViewT.setText(String.format("%s", i));
     }
 
     // display method for the total remark
 
-
-    public void displayTR() {
+    @SuppressLint("all")
+    private void displayTR() {
         TextView textViewTR = findViewById(R.id.total_remark);
         boolean remarkTa = (grade >= 80);
         boolean remarkTb = ((grade >= 60 ) && (grade < 80));
@@ -371,32 +375,32 @@ public class GradeActivity extends AppCompatActivity {
         if (remarkTa) {
             i = R.string.excellent;
             textViewTR.setText(i);
-            textViewTR.setTextColor(getResources().getColor(R.color.green));
+            textViewTR.setTextColor(Color.rgb(0,250,0));
             Toast.makeText(this, "" + name + ", you scored " + grade + "%."
                     + " Excellent", Toast.LENGTH_SHORT).show();//toast message for grade level of >= 80
         }else if (remarkTb) {
             i = R.string.very_good;
             textViewTR.setText(i);
-            textViewTR.setTextColor(getResources().getColor(R.color.blue));
+            textViewTR.setTextColor(Color.rgb(0,0,250));
             Toast.makeText(this, "" + name + ", you scored " + grade + "%."
                     + " Very Good", Toast.LENGTH_SHORT).show();//toast message for grade level of >= 60 t0 < 80
         }else if (remarkTc) {
             i = R.string.good;
             textViewTR.setText(i);
-            textViewTR.setTextColor(getResources().getColor(R.color.indigo));
+            textViewTR.setTextColor(Color.rgb(200,0,200));
             Toast.makeText(this, "" + name + ", you scored " + grade + "%."
                     + " Good", Toast.LENGTH_SHORT).show();//toast message for grade level of >= 45 t0 < 60
         }else {
             i = R.string.failed;
             textViewTR.setText(i);
-            textViewTR.setTextColor(getResources().getColor(R.color.red));
+            textViewTR.setTextColor(Color.rgb(250,0,0));
             Toast.makeText(this, "" + name + ", you scored " + grade + "%."
                     + " Try Again", Toast.LENGTH_SHORT).show();//toast message for grade level of 0 t0 < 45
         }
     }
 
     //Intent to move from this activity to the answer activity
-    public void answerPage(View view) {
+    public void answerPage(@SuppressWarnings("unused") View view) {
         Intent answer = new Intent(this, AnswersActivity.class);
         startActivity(answer);//start the activity
     }

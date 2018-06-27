@@ -4,7 +4,7 @@
     android:layout_width="280dp"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:background="@color/background_light"
+    android:background="@drawable/popup_design"
     android:orientation="vertical"
     android:padding="5dp"
     tools:context=".MainActivity">
@@ -62,7 +62,6 @@
             android:textStyle="bold|italic" />
 
         <TextView
-            android:id="@+id/u_text"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:background="@drawable/circlebackground"

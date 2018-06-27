@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AB Quiz</string>
+    <string name="app_name">Android Basic Quiz App</string>
 
     <string name="spotlight_updater">Spotlight Updater</string>
     <string name="powered_by">powered by</string>
@@ -97,12 +97,10 @@
     <string name="answer_10">Question 10: Answer</string>
 
 
-    <string name="score">score</string>
     <string name="qTag">Questions</string>
     <string name="score_tag">Score</string>
     <string name="remark_tag">Remark</string>
     <string name="total_tag">Total</string>
-    <string name="grade_analysis">Grade Analysis</string>
     <string name="correct_answer">correct</string>
     <string name="wrong_answer">wrong</string>
     <string name="partial_answer">fair</string>
