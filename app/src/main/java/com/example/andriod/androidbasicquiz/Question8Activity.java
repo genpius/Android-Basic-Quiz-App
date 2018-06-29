@@ -55,8 +55,7 @@ public class Question8Activity extends AppCompatActivity {
 
     public void check(View view) {
         int score = 0;
-        RadioGroup radioGroup = findViewById(R.id.question8_answer);
-        boolean radioButton = ((RadioButton) view).isChecked();
+        boolean radioButton = ((RadioButton) view).isChecked();//check if any of the radio button is checked
         switch (view.getId()) {
             case R.id.answer8_1://execute this if radiobutton 1 is clicked
                 if (radioButton) {
