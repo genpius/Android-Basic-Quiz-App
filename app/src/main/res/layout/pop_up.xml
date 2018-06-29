@@ -82,7 +82,8 @@
         android:hint="@string/enter_your_name_editText"
         android:layout_marginTop="30dp"
         android:textColorHint="@color/colorPrimaryDark"
-        android:inputType="textPersonName"/>
+        android:inputType="textPersonName"
+        android: textColor="#ffffff" />
 
     <Button
         android:id="@+id/start"
