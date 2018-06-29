@@ -40,8 +40,7 @@ public class Question3Activity extends AppCompatActivity {
 
     public void check(View view) {
         int score = 0;
-        RadioGroup radioGroup = findViewById(R.id.question3_answer);
-        boolean radioButton = ((RadioButton) view).isChecked();
+        boolean radioButton = ((RadioButton) view).isChecked();//check if any of the radio button is checked
         switch (view.getId()) {
             case R.id.answer3_1://execute this if radiobutton 1 is clicked
                 if (radioButton) {
@@ -87,7 +86,6 @@ public class Question3Activity extends AppCompatActivity {
     in the question3activity xml*/
     public void lunchPage4(View view) {
         Intent question4Intent = new android.content.Intent(Question3Activity.this, Question4Activity.class);
-
         //adding extra details to the intent
         question4Intent.putExtra("score1", score1);
         question4Intent.putExtra("score2", score2);
