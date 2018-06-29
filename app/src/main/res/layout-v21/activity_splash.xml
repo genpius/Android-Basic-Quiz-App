@@ -19,16 +19,16 @@
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:background="@drawable/circlebackground"
-            android:backgroundTint="#fff"
+            android:backgroundTint="@color/white"
             android:fontFamily="cursive"
             android:gravity="center"
-            android:shadowColor="#000"
+            android:shadowColor="@color/black"
             android:shadowDx="5"
             android:shadowDy="5"
             android:shadowRadius="10"
             android:text="@string/splash_s"
             android:textAllCaps="true"
-            android:textColor="#f08080"
+            android:textColor="@color/lightcoral"
             android:textSize="40sp"
             android:textStyle="bold|italic" />
 
@@ -39,16 +39,16 @@
             android:layout_below="@id/s_text"
             android:layout_toEndOf="@id/s_text"
             android:background="@drawable/circlebackground"
-            android:backgroundTint="#000"
+            android:backgroundTint="@color/black"
             android:fontFamily="cursive"
             android:gravity="center"
-            android:shadowColor="#000"
+            android:shadowColor="@color/black"
             android:shadowDx="5"
             android:shadowDy="5"
             android:shadowRadius="10"
             android:text="@string/splash_l"
             android:textAllCaps="true"
-            android:textColor="#90ee90"
+            android:textColor="@color/lemon"
             android:textSize="40sp"
             android:textStyle="bold|italic" />
 
@@ -61,13 +61,13 @@
             android:backgroundTint="@color/colorAccent"
             android:fontFamily="cursive"
             android:gravity="center"
-            android:shadowColor="#000"
+            android:shadowColor="@color/black"
             android:shadowDx="5"
             android:shadowDy="5"
             android:shadowRadius="10"
             android:text="@string/splash_u"
             android:textAllCaps="true"
-            android:textColor="#ffff00"
+            android:textColor="@color/yellow"
             android:textSize="40sp"
             android:textStyle="bold|italic" />
     </RelativeLayout>
@@ -84,7 +84,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/powered_by"
-            android:textColor="#000"
+            android:textColor="@color/black"
             android:textSize="12sp" />
 
         <TextView
@@ -95,7 +95,7 @@
             android:shadowDy="5"
             android:shadowRadius="10"
             android:text="@string/spotlight_updater"
-            android:textColor="#fff"
+            android:textColor="@color/white"
             android:textSize="16sp"
             android:textStyle="bold|italic"
             android:padding="5dp"/>

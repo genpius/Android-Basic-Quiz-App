@@ -14,7 +14,7 @@
         android:backgroundTint="@color/colorPrimary"
         android:gravity="center"
         android:text="@string/grade_tag"
-        android:textColor="#ffffff"
+        android:textColor="@color/white"
         android:textSize="20sp" />
 
     <TableLayout
@@ -30,7 +30,7 @@
             android:layout_margin="1dp"
             android:layout_weight="1"
             android:paddingTop="@dimen/parent_padding10"
-            android:background="#fff">
+            android:background="@color/white">
 
             <TextView
                 android:id="@+id/grade_analysis"
@@ -91,13 +91,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question_tag"
                     android:textStyle="bold" />
@@ -107,7 +106,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -118,7 +116,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -129,13 +126,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question2_tag"
                     android:textStyle="bold" />
@@ -145,7 +141,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -156,7 +151,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -167,13 +161,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question3_tag"
                     android:textStyle="bold" />
@@ -183,7 +176,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -194,7 +186,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -205,13 +196,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question4_tag"
                     android:textStyle="bold" />
@@ -221,7 +211,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -232,7 +221,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -243,13 +231,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question5_tag"
                     android:textStyle="bold" />
@@ -259,7 +246,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -270,7 +256,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -281,13 +266,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question6_tag"
                     android:textStyle="bold" />
@@ -297,7 +281,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -308,7 +291,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -319,13 +301,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question7_tag"
                     android:textStyle="bold" />
@@ -335,7 +316,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -346,7 +326,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -357,13 +336,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question8_tag"
                     android:textStyle="bold" />
@@ -373,7 +351,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -384,7 +361,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -395,13 +371,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question9_tag"
                     android:textStyle="bold" />
@@ -411,7 +386,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -422,7 +396,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -433,13 +406,12 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="0"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text="@string/question10_tag"
                     android:textStyle="bold" />
@@ -449,7 +421,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -460,7 +431,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -471,7 +441,7 @@
                 android:layout_height="0dp"
                 android:layout_margin="1dp"
                 android:layout_weight="1"
-                android:background="#fff">
+                android:background="@color/white">
 
                 <TextView
                     android:layout_width="match_parent"
@@ -487,7 +457,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="1"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textColor="@color/colorPrimaryDark"
@@ -498,7 +467,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_column="2"
-                    android:background="#ffffff"
                     android:gravity="center"
                     android:text=""
                     android:textStyle="bold" />
@@ -515,7 +483,7 @@
         android:gravity="center"
         android:onClick="answerPage"
         android:padding="10dp"
-        android:shadowColor="#000"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="10"

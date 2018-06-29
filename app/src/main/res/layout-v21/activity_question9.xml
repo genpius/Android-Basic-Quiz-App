@@ -13,7 +13,7 @@
         android:text="@string/question9_tag"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="#fff"
+        android:textColor="@color/white"
         android:background="@drawable/button"
         android:backgroundTint="@color/colorPrimary"/>
 
@@ -58,7 +58,7 @@
         android:layout_alignParentBottom="true"
         android:onClick="previousPage8"
         android:text="@string/previous_page"
-        android:shadowColor="#000"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="10"/>
@@ -70,7 +70,7 @@
         android:layout_alignParentEnd="true"
         android:onClick="lunchPage10"
         android:text="@string/next_page"
-        android:shadowColor="#000"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="10"/>

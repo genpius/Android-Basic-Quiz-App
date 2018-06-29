@@ -13,7 +13,7 @@
         android:text="@string/question6_tag"
         android:textSize="20sp"
         android:gravity="center"
-        android:textColor="#000"
+        android:textColor="@color/black"
         android:background="@drawable/button" />
 
     <TextView
@@ -47,7 +47,7 @@
         android:layout_alignParentBottom="true"
         android:text="@string/previous_page"
         android:onClick="previousPage5"
-        android:shadowColor="#000"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="10"/>
@@ -60,7 +60,7 @@
         android:layout_alignParentEnd="true"
         android:text="@string/next_page"
         android:onClick="lunchPage7"
-        android:shadowColor="#000"
+        android:shadowColor="@color/black"
         android:shadowDx="2"
         android:shadowDy="2"
         android:shadowRadius="10"/>
