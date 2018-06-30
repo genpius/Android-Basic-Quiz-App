@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Android Basic Quiz App</string>
+    <string name="app_name">AB Quiz</string>
 
     <string name="spotlight_updater">Spotlight Updater</string>
     <string name="powered_by">powered by</string>

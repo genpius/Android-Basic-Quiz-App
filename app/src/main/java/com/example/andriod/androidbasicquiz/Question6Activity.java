@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Question6Activity extends AppCompatActivity {
 
@@ -84,16 +86,20 @@ public class Question6Activity extends AppCompatActivity {
     /*Intent method to move from question6activity to question7activity by pressing the next button
     in the question6activity xml*/
     public void lunchPage7(android.view.View view) {
-        android.content.Intent question7Intent = new android.content.Intent(Question6Activity.this, Question7Activity.class);
-
-        //adding extra details to the intent
-        question7Intent.putExtra("score1", score1);
-        question7Intent.putExtra("score2", score2);
-        question7Intent.putExtra("score3", score3);
-        question7Intent.putExtra("score4", score4);
-        question7Intent.putExtra("score5", score5);
-        question7Intent.putExtra("score6", score6);
-        question7Intent.putExtra("personName", name);
-        startActivity(question7Intent);//start the activity
+        RadioGroup radioGroup = findViewById(R.id.question6_answer);
+        if (radioGroup.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
+        } else {
+            android.content.Intent question7Intent = new android.content.Intent(Question6Activity.this, Question7Activity.class);
+            //adding extra details to the intent
+            question7Intent.putExtra("score1", score1);
+            question7Intent.putExtra("score2", score2);
+            question7Intent.putExtra("score3", score3);
+            question7Intent.putExtra("score4", score4);
+            question7Intent.putExtra("score5", score5);
+            question7Intent.putExtra("score6", score6);
+            question7Intent.putExtra("personName", name);
+            startActivity(question7Intent);//start the activity
+        }
     }
 }

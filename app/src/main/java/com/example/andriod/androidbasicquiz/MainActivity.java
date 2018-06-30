@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         Button start;
         myDialog.setContentView(R.layout.pop_up);
         slu = myDialog.findViewById(R.id.pop_close);
-        start = myDialog.findViewById(R.id.start);
         slu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -54,10 +53,14 @@ public class MainActivity extends AppCompatActivity {
         EditText personName = myDialog.findViewById(R.id.name);//finding the editable view on the pop up
         name = personName.getText().toString();//extracting the user input on the view
         Log.d("Testing", ""+ name);//log message for debugging
-        Toast.makeText(this, "All the Best", Toast.LENGTH_SHORT).show();//toast message as button is clicked
-        Intent question1intent = new Intent(MainActivity.this, Question1Activity.class);
-        question1intent.putExtra("personName", name);//adding extra details to the intent
-        startActivity(question1intent);//start the question1activity
+        if (name.matches("")) {
+            Toast.makeText(this, "fill your name first", Toast.LENGTH_SHORT).show();
+        } else {
+            Toast.makeText(this, "All the Best", Toast.LENGTH_SHORT).show();//toast message as button is clicked
+            Intent question1intent = new Intent(MainActivity.this, Question1Activity.class);
+            question1intent.putExtra("personName", name);//adding extra details to the intent
+            startActivity(question1intent);//start the question1activity
+        }
     }
 
 

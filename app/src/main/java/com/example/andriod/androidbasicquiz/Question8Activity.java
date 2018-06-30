@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Question8Activity extends AppCompatActivity {
 
@@ -92,18 +94,23 @@ public class Question8Activity extends AppCompatActivity {
     /*Intent method to move from question8activity to question9activity by pressing the next button
     in the question8activity xml*/
     public void lunchPage9(android.view.View view) {
-        android.content.Intent question9Intent = new android.content.Intent(Question8Activity.this, Question9Activity.class);
+        RadioGroup radioGroup = findViewById(R.id.question8_answer);
+        if (radioGroup.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
+        } else {
+            android.content.Intent question9Intent = new android.content.Intent(Question8Activity.this, Question9Activity.class);
 
-        //adding extra details to the intent
-        question9Intent.putExtra("score1", score1);
-        question9Intent.putExtra("score2", score2);
-        question9Intent.putExtra("score3", score3);
-        question9Intent.putExtra("score4", score4);
-        question9Intent.putExtra("score5", score5);
-        question9Intent.putExtra("score6", score6);
-        question9Intent.putExtra("score7", score7);
-        question9Intent.putExtra("score8", score8);
-        question9Intent.putExtra("personName", name);
-        startActivity(question9Intent);//start the activity
+            //adding extra details to the intent
+            question9Intent.putExtra("score1", score1);
+            question9Intent.putExtra("score2", score2);
+            question9Intent.putExtra("score3", score3);
+            question9Intent.putExtra("score4", score4);
+            question9Intent.putExtra("score5", score5);
+            question9Intent.putExtra("score6", score6);
+            question9Intent.putExtra("score7", score7);
+            question9Intent.putExtra("score8", score8);
+            question9Intent.putExtra("personName", name);
+            startActivity(question9Intent);//start the activity
+        }
     }
 }

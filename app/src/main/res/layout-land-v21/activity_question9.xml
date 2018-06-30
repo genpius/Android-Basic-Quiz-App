@@ -47,6 +47,7 @@
         android:onClick="check"/>
 
     <CheckBox
+        android:id="@+id/answer9_4"
         style="@style/CategoryRadioButton"
         android:text="@string/answer9_4"
         android:layout_below="@id/answer9_3"

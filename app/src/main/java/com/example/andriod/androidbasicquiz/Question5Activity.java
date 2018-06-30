@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Question5Activity extends AppCompatActivity {
 
@@ -91,15 +93,20 @@ public class Question5Activity extends AppCompatActivity {
     /*Intent method to move from question5activity to question6activity by pressing the next button
     in the question5activity xml*/
     public void lunchPage6(android.view.View view) {
-        android.content.Intent question6Intent = new android.content.Intent(Question5Activity.this, Question6Activity.class);
+        RadioGroup radioGroup = findViewById(R.id.question5_answer);
+        if (radioGroup.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
+        } else {
+            android.content.Intent question6Intent = new android.content.Intent(Question5Activity.this, Question6Activity.class);
 
-        //adding extra details to the intent
-        question6Intent.putExtra("score1", score1);
-        question6Intent.putExtra("score2", score2);
-        question6Intent.putExtra("score3", score3);
-        question6Intent.putExtra("score4", score4);
-        question6Intent.putExtra("score5", score5);
-        question6Intent.putExtra("personName", name);
-        startActivity(question6Intent);//start the activity
+            //adding extra details to the intent
+            question6Intent.putExtra("score1", score1);
+            question6Intent.putExtra("score2", score2);
+            question6Intent.putExtra("score3", score3);
+            question6Intent.putExtra("score4", score4);
+            question6Intent.putExtra("score5", score5);
+            question6Intent.putExtra("personName", name);
+            startActivity(question6Intent);//start the activity
+        }
     }
 }

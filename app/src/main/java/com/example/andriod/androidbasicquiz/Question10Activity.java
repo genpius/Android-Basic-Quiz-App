@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Question10Activity extends AppCompatActivity {
 
@@ -80,31 +81,35 @@ public class Question10Activity extends AppCompatActivity {
         int score = 0;
         EditText editText = findViewById(R.id.edit_text1);//finding the editable view on the activity
         String inputText = editText.getText().toString();//extracting the user input on the view
-        String answerText = getString(R.string.answer10);//right answer for the question
-        boolean edit = inputText.equals(answerText);//returns true or false
-        if (edit) {
-            score = 10;
-            score10 = score;
-            Log.d("Testing10a", "" + score10);//log message for debugging
+        if (inputText.matches("")) {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
         } else {
-            score10 = score;
-            Log.d("Testing10b", "" + score10);//log message for debugging
+            String answerText = getString(R.string.answer10);//right answer for the question
+            boolean edit = inputText.equals(answerText);//returns true or false
+            if (edit) {
+                score = 10;
+                score10 = score;
+                Log.d("Testing10a", "" + score10);//log message for debugging
+            } else {
+                score10 = score;
+                Log.d("Testing10b", "" + score10);//log message for debugging
+            }
+
+            android.content.Intent submitIntent = new android.content.Intent(Question10Activity.this, GradeActivity.class);
+
+            //adding extra details to the intent
+            submitIntent.putExtra("score1", score1);
+            submitIntent.putExtra("score2", score2);
+            submitIntent.putExtra("score3", score3);
+            submitIntent.putExtra("score4", score4);
+            submitIntent.putExtra("score5", score5);
+            submitIntent.putExtra("score6", score6);
+            submitIntent.putExtra("score7", score7);
+            submitIntent.putExtra("score8", score8);
+            submitIntent.putExtra("score9", score9);
+            submitIntent.putExtra("score10", score10);
+            submitIntent.putExtra("personName", name);
+            startActivity(submitIntent);//start the activity
         }
-
-        android.content.Intent submitIntent = new android.content.Intent(Question10Activity.this, GradeActivity.class);
-
-        //adding extra details to the intent
-        submitIntent.putExtra("score1", score1);
-        submitIntent.putExtra("score2", score2);
-        submitIntent.putExtra("score3", score3);
-        submitIntent.putExtra("score4", score4);
-        submitIntent.putExtra("score5", score5);
-        submitIntent.putExtra("score6", score6);
-        submitIntent.putExtra("score7", score7);
-        submitIntent.putExtra("score8", score8);
-        submitIntent.putExtra("score9", score9);
-        submitIntent.putExtra("score10", score10);
-        submitIntent.putExtra("personName", name);
-        startActivity(submitIntent);//start the activity
     }
 }

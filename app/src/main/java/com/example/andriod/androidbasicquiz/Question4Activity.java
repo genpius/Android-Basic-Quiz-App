@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.Toast;
 
 public class Question4Activity extends AppCompatActivity {
 
@@ -86,16 +87,23 @@ public class Question4Activity extends AppCompatActivity {
     /*Intent method to move from question4activity to question5activity by pressing the next button
     in the question4activity xml*/
     public void lunchPage5(android.view.View view) {
-        score4 = score4a + score4b;
-        Log.d("Testing4", "" +score4);//log message for debugging
-        android.content.Intent question5Intent = new android.content.Intent(Question4Activity.this, Question5Activity.class);
-
-        //adding extra details to the intent
-        question5Intent.putExtra("score1", score1);
-        question5Intent.putExtra("score2", score2);
-        question5Intent.putExtra("score3", score3);
-        question5Intent.putExtra("score4", score4);
-        question5Intent.putExtra("personName", name);
-        startActivity(question5Intent);//start the activity
+        CheckBox checkBox1 = findViewById(R.id.answer4_1);
+        CheckBox checkBox2 = findViewById(R.id.answer4_2);
+        CheckBox checkBox3 = findViewById(R.id.answer4_3);
+        CheckBox checkBox4 = findViewById(R.id.answer4_4);
+        if (checkBox1.isChecked() || checkBox2.isChecked() || checkBox3.isChecked() || checkBox4.isChecked()) {
+            score4 = score4a + score4b;
+            Log.d("Testing4", "" + score4);//log message for debugging
+            android.content.Intent question5Intent = new android.content.Intent(Question4Activity.this, Question5Activity.class);
+            //adding extra details to the intent
+            question5Intent.putExtra("score1", score1);
+            question5Intent.putExtra("score2", score2);
+            question5Intent.putExtra("score3", score3);
+            question5Intent.putExtra("score4", score4);
+            question5Intent.putExtra("personName", name);
+            startActivity(question5Intent);//start the activity
+        } else {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
+        }
     }
 }

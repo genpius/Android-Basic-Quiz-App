@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class Question7Activity extends AppCompatActivity {
 
@@ -68,28 +69,31 @@ public class Question7Activity extends AppCompatActivity {
         int score = 0;
         EditText editText = findViewById(R.id.edit_text);//finding the editable view on the activity
         String inputText = editText.getText().toString();//extracting the user input on the view
-        String answerText = getString(R.string.answer7);//right answer for the question
-        boolean edit = inputText.equals(answerText);//returns true or false
-        if (edit) {
-            score = 10;
-            score7 = score;
-            Log.d("Testing7a", "" + score7);//log message for debugging
+        if (inputText.matches("")) {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
         } else {
-            score7 = score;
-            Log.d("Testing7b", "" + score7);//log message for debugging
+            String answerText = getString(R.string.answer7);//right answer for the question
+            boolean edit = inputText.equals(answerText);//returns true or false
+            if (edit) {
+                score = 10;
+                score7 = score;
+                Log.d("Testing7a", "" + score7);//log message for debugging
+            } else {
+                score7 = score;
+                Log.d("Testing7b", "" + score7);//log message for debugging
+            }
+
+            android.content.Intent question8Intent = new android.content.Intent(Question7Activity.this, Question8Activity.class);
+            //adding extra details to the intent
+            question8Intent.putExtra("score1", score1);
+            question8Intent.putExtra("score2", score2);
+            question8Intent.putExtra("score3", score3);
+            question8Intent.putExtra("score4", score4);
+            question8Intent.putExtra("score5", score5);
+            question8Intent.putExtra("score6", score6);
+            question8Intent.putExtra("score7", score7);
+            question8Intent.putExtra("personName", name);
+            startActivity(question8Intent);//start the activity
         }
-
-        android.content.Intent question8Intent = new android.content.Intent(Question7Activity.this, Question8Activity.class);
-
-        //adding extra details to the intent
-        question8Intent.putExtra("score1", score1);
-        question8Intent.putExtra("score2", score2);
-        question8Intent.putExtra("score3", score3);
-        question8Intent.putExtra("score4", score4);
-        question8Intent.putExtra("score5", score5);
-        question8Intent.putExtra("score6", score6);
-        question8Intent.putExtra("score7", score7);
-        question8Intent.putExtra("personName", name);
-        startActivity(question8Intent);//start the activity
     }
 }

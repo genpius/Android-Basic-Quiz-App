@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.RadioButton;
+import android.widget.RadioGroup;
+import android.widget.Toast;
 
 public class Question2Activity extends AppCompatActivity {
 
@@ -78,12 +80,17 @@ public class Question2Activity extends AppCompatActivity {
     /*Intent method to move from question2activity to question3activity by pressing the next button
     in the question2activity xml*/
     public void lunchPage3(View view) {
-        Intent question2Intent = new Intent(Question2Activity.this, Question3Activity.class);
-        //adding extra details to the intent
-        question2Intent.putExtra("score1", score1);
-        question2Intent.putExtra("score2", score2);
-        question2Intent.putExtra("personName", name);
-        startActivity(question2Intent);//start the activity
+        RadioGroup radioGroup = findViewById(R.id.question2_answer);
+        if (radioGroup.getCheckedRadioButtonId() == -1) {
+            Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
+        } else {
+            Intent question2Intent = new Intent(Question2Activity.this, Question3Activity.class);
+            //adding extra details to the intent
+            question2Intent.putExtra("score1", score1);
+            question2Intent.putExtra("score2", score2);
+            question2Intent.putExtra("personName", name);
+            startActivity(question2Intent);//start the activity
+        }
     }
 
 }
