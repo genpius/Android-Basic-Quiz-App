@@ -36,4 +36,4 @@ Different view types are in use on this app for user interactions. which are:
 #Host Link
 The G-Drive link for the app APK
 
-https://drive.google.com/file/d/1LdFWtlUBehypTit5Sk7uHVwHnfc0DFGD/view?usp=drivesdk
+https://drive.google.com/file/d/1h4Jyd0bzMKdAufVstgiiM3ucmohBIWct/view?usp=drivesdk
