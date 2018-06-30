@@ -67,7 +67,7 @@ public class Question7Activity extends AppCompatActivity {
     in the question7activity xml*/
     public void lunchPage8(android.view.View view) {
         int score = 0;
-        EditText editText = findViewById(R.id.edit_text);//finding the editable view on the activity
+        EditText editText = (EditText) findViewById(R.id.edit_text);//finding the editable view on the activity
         String inputText = editText.getText().toString();//extracting the user input on the view
         if (inputText.matches("")) {
             Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
