@@ -103,21 +103,21 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the grade analysis
     @SuppressLint("all")
     private void displayGA() {
-        TextView gradeSummary = findViewById(R.id.grade_analysis);
+        TextView gradeSummary = (TextView) findViewById(R.id.grade_analysis);
         gradeSummary.setText(String.format("%s%s", getString(R.string.grade_analysis_text), name));
     }
 
     // display method for the question 1 score
     @SuppressLint("all")
     private void display1(String i) {
-        TextView textView1 = findViewById(R.id.score1);
+        TextView textView1 = (TextView) findViewById(R.id.score1);
         textView1.setText(String.format("%s", i));
     }
 
     // display method for the question 1 remark
     @SuppressLint("all")
     private void display1R() {
-        TextView textView1R = findViewById(R.id.remark1);
+        TextView textView1R = (TextView) findViewById(R.id.remark1);
         boolean remark1 = (score1 == 10);
         int i;
         if (remark1) {
@@ -134,14 +134,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 2 score
 
     private void display2(String i) {
-        TextView textView2 = findViewById(R.id.score2);
+        TextView textView2 = (TextView)findViewById(R.id.score2);
         textView2.setText(String.format("%s", i));
     }
 
     // display method for the question 2 remark
     @SuppressLint("all")
     private void display2R() {
-        TextView textView2R = findViewById(R.id.remark2);
+        TextView textView2R = TextView) findViewById(R.id.remark2);
         boolean remark2 = (score2 == 10);
         int i;
         if (remark2) {
@@ -158,14 +158,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 3 score
     @SuppressLint("all")
     private void display3(String i) {
-        TextView textView3 = findViewById(R.id.score3);
+        TextView textView3 = (TextView) findViewById(R.id.score3);
         textView3.setText(String.format("%s", i));
     }
 
     // display method for the question 3 remark
     @SuppressLint("all")
     private void display3R() {
-        TextView textView3R = findViewById(R.id.remark3);
+        TextView textView3R = (TextView) findViewById(R.id.remark3);
         boolean remark3 = (score3 == 10);
         int i;
         if (remark3) {
@@ -182,14 +182,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 4 score
     @SuppressLint("all")
     private void display4(String i) {
-        TextView textView4 = findViewById(R.id.score4);
+        TextView textView4 = (TextView)findViewById(R.id.score4);
         textView4.setText(String.format("%s", i));
     }
 
     // display method for the question 4 remark
     @SuppressLint("all")
     private void display4R() {
-        TextView textView4R = findViewById(R.id.remark4);
+        TextView textView4R = (TextView) findViewById(R.id.remark4);
         boolean remark4a = (score4 == 10);
         boolean remark4b = (score4 == 5);
         int i;
@@ -211,14 +211,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 5 score
     @SuppressLint("all")
     private void display5(String i) {
-        TextView textView5 = findViewById(R.id.score5);
+        TextView textView5 = (TextView) findViewById(R.id.score5);
         textView5.setText(String.format("%s", i));
     }
 
     // display method for the question 5 remark
     @SuppressLint("all")
     private void display5R() {
-        TextView textView5R = findViewById(R.id.remark5);
+        TextView textView5R = (TextView) findViewById(R.id.remark5);
         boolean remark5 = (score5 == 10);
         int i;
         if (remark5) {
@@ -235,14 +235,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 6 score
     @SuppressLint("all")
     private void display6(String i) {
-        TextView textView6 = findViewById(R.id.score6);
+        TextView textView6 = (TextView) findViewById(R.id.score6);
         textView6.setText(String.format("%s", i));
     }
 
     // display method for the question 6 remark
     @SuppressLint("all")
     private void display6R() {
-        TextView textView6R = findViewById(R.id.remark6);
+        TextView textView6R = (TextView) findViewById(R.id.remark6);
         boolean remark6 = (score6 == 10);
         int i;
         if (remark6) {
@@ -259,14 +259,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 7 score
     @SuppressLint("all")
     private void display7(String i) {
-        TextView textView7 = findViewById(R.id.score7);
+        TextView textView7 = (TextView) findViewById(R.id.score7);
         textView7.setText(String.format("%s", i));
     }
 
     // display method for the question 7 remark
     @SuppressLint("all")
     private void display7R() {
-        TextView textView7R = findViewById(R.id.remark7);
+        TextView textView7R = (TextView) findViewById(R.id.remark7);
         boolean remark7 = (score7 == 10);
         int i;
         if (remark7) {
@@ -283,14 +283,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 8 score
     @SuppressLint("all")
     private void display8(String i) {
-        TextView textView8 = findViewById(R.id.score8);
+        TextView textView8 = (TextView) findViewById(R.id.score8);
         textView8.setText(String.format("%s", i));
     }
 
     // display method for the question 8 remark
     @SuppressLint("all")
     private void display8R() {
-        TextView textView8R = findViewById(R.id.remark8);
+        TextView textView8R = (TextView) findViewById(R.id.remark8);
         boolean remark8 = (score8 == 10);
         int i;
         if (remark8) {
@@ -306,14 +306,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 9 score
     @SuppressLint("all")
     private void display9(String i) {
-        TextView textView9 = findViewById(R.id.score9);
+        TextView textView9 = (TextView) findViewById(R.id.score9);
         textView9.setText(String.format("%s", i));
     }
 
     // display method for the question 9 remark
     @SuppressLint("all")
     private void display9R() {
-        TextView textView9R = findViewById(R.id.remark9);
+        TextView textView9R = (TextView) findViewById(R.id.remark9);
         boolean remark9a = (score9 == 10);
         boolean remark9b = (score9 == 5);
         int i;
@@ -335,14 +335,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 10 score
     @SuppressLint("all")
     private void display10(String i) {
-        TextView textView10 = findViewById(R.id.score10);
+        TextView textView10 = (TextView) findViewById(R.id.score10);
         textView10.setText(String.format("%s", i));
     }
 
     // display method for the question 10 remark
     @SuppressLint("all")
     private void display10R() {
-        TextView textView10R = findViewById(R.id.remark10);
+        TextView textView10R = (TextView) findViewById(R.id.remark10);
         boolean remark1 = (score10 == 10);
         int i;
         if (remark1) {
@@ -359,7 +359,7 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the total score
     @SuppressLint("all")
     private void displayT(String i) {
-        TextView textViewT = findViewById(R.id.total_score);
+        TextView textViewT = (TextView) findViewById(R.id.total_score);
         textViewT.setText(String.format("%s", i));
     }
 
@@ -367,7 +367,7 @@ public class GradeActivity extends AppCompatActivity {
 
     @SuppressLint("all")
     private void displayTR() {
-        TextView textViewTR = findViewById(R.id.total_remark);
+        TextView textViewTR = TextView) findViewById(R.id.total_remark);
         boolean remarkTa = (grade >= 80);
         boolean remarkTb = ((grade >= 60 ) && (grade < 80));
         boolean remarkTc = ((grade >= 45) && (grade < 60));
