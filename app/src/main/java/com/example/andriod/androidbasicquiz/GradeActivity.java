@@ -134,14 +134,14 @@ public class GradeActivity extends AppCompatActivity {
     // display method for the question 2 score
 
     private void display2(String i) {
-        TextView textView2 = (TextView)findViewById(R.id.score2);
+        TextView textView2 = (TextView) findViewById(R.id.score2);
         textView2.setText(String.format("%s", i));
     }
 
     // display method for the question 2 remark
     @SuppressLint("all")
     private void display2R() {
-        TextView textView2R = TextView) findViewById(R.id.remark2);
+        TextView textView2R = (TextView) findViewById(R.id.remark2);
         boolean remark2 = (score2 == 10);
         int i;
         if (remark2) {
@@ -367,7 +367,7 @@ public class GradeActivity extends AppCompatActivity {
 
     @SuppressLint("all")
     private void displayTR() {
-        TextView textViewTR = TextView) findViewById(R.id.total_remark);
+        TextView textViewTR = (TextView) findViewById(R.id.total_remark);
         boolean remarkTa = (grade >= 80);
         boolean remarkTb = ((grade >= 60 ) && (grade < 80));
         boolean remarkTc = ((grade >= 45) && (grade < 60));
