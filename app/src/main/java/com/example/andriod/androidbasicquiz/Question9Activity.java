@@ -62,7 +62,7 @@ public class Question9Activity extends AppCompatActivity {
     public void check(View view) {
         int score = 0;
         score9a = 0;
-        CheckBox checkBox1 = findViewById(R.id.answer9_1);
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.answer9_1);
         if (checkBox1.isChecked()) {
             score = 5;
             score9a = score;
@@ -76,7 +76,7 @@ public class Question9Activity extends AppCompatActivity {
     public void check1(View view) {
         int score = 0;
         score9b = 0;
-        CheckBox checkBox2 = findViewById(R.id.answer9_2);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.answer9_2);
         if (checkBox2.isChecked()) {
             score = 5;
             score9b = score;
@@ -109,10 +109,10 @@ public class Question9Activity extends AppCompatActivity {
     in the question9activity xml*/
     public void lunchPage10(android.view.View view) {
         //find the checkbox
-        CheckBox checkBox1 = findViewById(R.id.answer9_1);
-        CheckBox checkBox2 = findViewById(R.id.answer9_2);
-        CheckBox checkBox3 = findViewById(R.id.answer9_3);
-        CheckBox checkBox4 = findViewById(R.id.answer9_4);
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.answer9_1);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.answer9_2);
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.answer9_3);
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.answer9_4);
         //check if any of the checbox has been engaged before progressing
         if (checkBox1.isChecked() || checkBox2.isChecked() || checkBox3.isChecked() || checkBox4.isChecked()) {
             score9 = score9a + score9b;
