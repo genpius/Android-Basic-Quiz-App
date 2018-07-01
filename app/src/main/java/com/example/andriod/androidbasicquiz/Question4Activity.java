@@ -48,7 +48,7 @@ public class Question4Activity extends AppCompatActivity {
     public void check(View view) {
         int score = 0;
         score4a = 0;
-        CheckBox checkBox2 = findViewById(R.id.answer4_2);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.answer4_2);
         if (checkBox2.isChecked()) {
             score = 5;
             score4a = score;
@@ -61,7 +61,7 @@ public class Question4Activity extends AppCompatActivity {
     //execute this if checkbox 4 is clicked
     public void check1(View view){
         int score = 0;
-        CheckBox checkBox4 = findViewById(R.id.answer4_4);
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.answer4_4);
         if (checkBox4.isChecked()) {
             score = 5;
             score4b = score;
@@ -87,10 +87,12 @@ public class Question4Activity extends AppCompatActivity {
     /*Intent method to move from question4activity to question5activity by pressing the next button
     in the question4activity xml*/
     public void lunchPage5(android.view.View view) {
-        CheckBox checkBox1 = findViewById(R.id.answer4_1);
-        CheckBox checkBox2 = findViewById(R.id.answer4_2);
-        CheckBox checkBox3 = findViewById(R.id.answer4_3);
-        CheckBox checkBox4 = findViewById(R.id.answer4_4);
+        //find all CheckBox
+        CheckBox checkBox1 = (CheckBox) findViewById(R.id.answer4_1);
+        CheckBox checkBox2 = (CheckBox) findViewById(R.id.answer4_2);
+        CheckBox checkBox3 = (CheckBox) findViewById(R.id.answer4_3);
+        CheckBox checkBox4 = (CheckBox) findViewById(R.id.answer4_4);
+        //check if any one has been engaged
         if (checkBox1.isChecked() || checkBox2.isChecked() || checkBox3.isChecked() || checkBox4.isChecked()) {
             score4 = score4a + score4b;
             Log.d("Testing4", "" + score4);//log message for debugging

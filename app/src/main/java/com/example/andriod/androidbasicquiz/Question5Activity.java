@@ -93,7 +93,7 @@ public class Question5Activity extends AppCompatActivity {
     /*Intent method to move from question5activity to question6activity by pressing the next button
     in the question5activity xml*/
     public void lunchPage6(android.view.View view) {
-        RadioGroup radioGroup = findViewById(R.id.question5_answer);
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.question5_answer);
         if (radioGroup.getCheckedRadioButtonId() == -1) {
             Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
         } else {

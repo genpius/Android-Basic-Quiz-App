@@ -86,7 +86,8 @@ public class Question3Activity extends AppCompatActivity {
     /*Intent method to move from question3activity to question4activity by pressing the next button
     in the question3activity xml*/
     public void lunchPage4(View view) {
-        RadioGroup radioGroup = findViewById(R.id.question3_answer);
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.question3_answer);// find the radiogroup
+        //check if any of the radiobutton is engaged before progressing
         if (radioGroup.getCheckedRadioButtonId() == -1) {
             Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
         } else {

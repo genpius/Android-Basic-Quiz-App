@@ -79,7 +79,7 @@ public class Question10Activity extends AppCompatActivity {
     in the question10activity xml*/
     public void submit(android.view.View view) {
         int score = 0;
-        EditText editText = findViewById(R.id.edit_text1);//finding the editable view on the activity
+        EditText editText = (EditText) findViewById(R.id.edit_text1);//finding the editable view on the activity
         String inputText = editText.getText().toString();//extracting the user input on the view
         if (inputText.matches("")) {
             Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();

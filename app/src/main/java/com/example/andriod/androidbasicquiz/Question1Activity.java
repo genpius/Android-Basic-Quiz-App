@@ -70,7 +70,7 @@ public class Question1Activity extends AppCompatActivity {
     in the question1activity xml*/
 
     public void lunchPage2(View view) {
-        RadioGroup radioGroup = findViewById(R.id.question1_answer);
+        RadioGroup radioGroup = (RadioGroup) findViewById(R.id.question1_answer);
 
         if (radioGroup.getCheckedRadioButtonId() == -1) {
             Toast.makeText(this, "Attempt the question first", Toast.LENGTH_SHORT).show();
