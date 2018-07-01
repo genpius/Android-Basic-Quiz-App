@@ -62,6 +62,7 @@
             android:textStyle="bold|italic" />
 
         <TextView
+            android:id="@+id/u_text"
             android:layout_width="50dp"
             android:layout_height="wrap_content"
             android:background="@drawable/circlebackground"

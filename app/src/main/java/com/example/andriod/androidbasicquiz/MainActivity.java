@@ -8,7 +8,8 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -19,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
 
     Dialog myDialog;
     String name;
+    Animation sluAnim;
+    Animation suText;
+    TextView sText;
+    TextView lText;
+    TextView uText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +36,19 @@ public class MainActivity extends AppCompatActivity {
     // method for the begin button to create a pop up
 
     public void popUp(View view) {
-        TextView slu;
-        Button start;
+        TextView sluX;
+        //set content view on the popup xml
         myDialog.setContentView(R.layout.pop_up);
-        slu = myDialog.findViewById(R.id.pop_close);
-        slu.setOnClickListener(new View.OnClickListener() {
+        //finding the various views required
+        sluX = myDialog.findViewById(R.id.pop_close);
+        lText = myDialog.findViewById(R.id.l_text);
+        sText = myDialog.findViewById(R.id.s_text);
+        uText =myDialog.findViewById(R.id.u_text);
+        //executing the animations
+        bounceLText();
+        bounceSUText();
+        //setting onClicklistner on the x button
+        sluX.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 myDialog.dismiss();
@@ -45,6 +59,19 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+    }
+
+    //method to implement a bounce effect on the S and U text views
+    private void bounceSUText() {
+        suText = AnimationUtils.loadAnimation(this, R.anim.bouncetop);//loading bouncetop anim xml
+        sText.startAnimation(suText);
+        uText.startAnimation(suText);
+    }
+
+    //method to implement a bounce effect on the L text view
+    private void bounceLText() {
+        sluAnim = AnimationUtils.loadAnimation(this, R.anim.bounce);//loading bounce anim xml
+        lText.startAnimation(sluAnim);
     }
 
     //Intent to move from this activity to the question 1 activity as the start button on pop is clicked
